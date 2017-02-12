@@ -5,10 +5,7 @@
     <title></title>
   </head>
   <body>
-    <a href="/about">About</a>
-    <a href="/contact">Contact</a>
-    <a href="/about/culture">About Culture</a>
-    <hr>
+    <?php require('partials/nav.php'); ?>
     <ul>
 
       <?php foreach ($tasks as $task) : ?>
