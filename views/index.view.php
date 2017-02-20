@@ -1,25 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <?php require('partials/nav.php'); ?>
-    <ul>
+<?php require 'partials/nav.php'; ?>
 
-      <?php foreach ($tasks as $task) : ?>
-        <li>
-          <?php if($task->completed) : ?>
-            <strike><?= $task->description; ?></strike>
+<h1>Submit Your Name</h1>
 
-          <?php else: ?>
-            <?= $task->description; ?>
-          <?php endif; ?>
 
-        </li>
-      <?php endforeach; ?>
-
-    </ul>
-  </body>
-</html>
+<form method="POST" class="" action="/names">
+  <input name="name"></input>
+  <button type="submit">Submit</button>
+</form>
