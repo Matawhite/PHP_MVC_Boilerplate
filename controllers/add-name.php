@@ -1,5 +1,7 @@
 <?php
 
+$app['database']->insert('users', [
+  'name' => $_POST['name']
+]);
 
-
-var_dump('You gave ' . $_POST['name']);
+header('Location: /');
